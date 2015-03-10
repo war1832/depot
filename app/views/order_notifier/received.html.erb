@@ -1,0 +1,9 @@
+<p> Dear <%= @order.name %> </p>
+<p>Thank you for your recent order from The Pragmatic Store.
+You ordered the following items:</p>
+<table>
+  <tr><th>Quantity</th><th>Description</th><th>Price</th></tr>
+  <%= render @order.line_items %>
+</table>
+<p>We'll send you a separate e-mail when your order ships.</p>
+
